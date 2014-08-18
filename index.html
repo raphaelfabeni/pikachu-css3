@@ -93,5 +93,23 @@
 			<div class="tail tail6"></div>
 		</div>
 	</div>
+	<!-- Audio -->
+	<audio id="audio">
+		<source src="audio/pikachu.ogg" type="audio/ogg">
+		<source src="audio/pikachu.mp3" type="audio/mp3">
+		<source src="audio/pikachu.wav" type="audio/wav">
+	</audio>
+
+	<script src="cheet.min.js"></script>
+	<script>
+	cheet('p i k a c h u', function () {
+  		playPikachu();
+	});
+
+	function playPikachu() {
+		var pikachu = document.getElementById('audio');
+		audio.play();
+	}
+	</script>
 </body>
 </html>
