@@ -32,6 +32,9 @@
 						<div class="nose-bottom"></div>
 					</div>					
 				</div>
+				<div id="open" class="mouth-open">
+					<div class="tongue"></div>
+				</div>
 				<div class="hold-mouth">
 					<div class="mouth mouth-left"></div>
 					<div class="mouth mouth-center"></div>						
@@ -94,7 +97,7 @@
 		</div>
 	</div>
 	<!-- Audio -->
-	<audio id="audio">
+	<audio id="audio" buffer='auto'>
 		<source src="audio/pikachu.ogg" type="audio/ogg">
 		<source src="audio/pikachu.mp3" type="audio/mp3">
 		<source src="audio/pikachu.wav" type="audio/wav">
@@ -103,12 +106,21 @@
 	<script src="cheet.min.js"></script>
 	<script>
 	cheet('p i k a c h u', function () {
+		window.setTimeout(openMouth, 400);
   		playPikachu();
 	});
 
 	function playPikachu() {
 		var pikachu = document.getElementById('audio');
 		audio.play();
+	}
+
+	function openMouth() {
+		var mouth = document.getElementById('open');
+		mouth.classList.add('active');
+		window.setTimeout(function() {
+			mouth.classList.remove('active');
+		}, 1500);
 	}
 	</script>
 </body>
