@@ -1,3 +1,10 @@
+.tip {
+    color: #444;
+    font-size: 24px;
+    text-align: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 .container {
     position: relative;
     margin: 200px auto 0;
@@ -549,7 +556,10 @@
     position: absolute;
     width: 136%;
     z-index: 10;
-    box-shadow: 0 4px 0 2px #a81729 inset;
+    
+    -webkit-box-shadow: 0 4px 0 2px #a81729 inset;
+       -moz-box-shadow: 0 4px 0 2px #a81729 inset;
+            box-shadow: 0 4px 0 2px #a81729 inset;
 }
 
 .tongue:before {
@@ -559,7 +569,11 @@
     left: -1px;
     position: absolute;
     top: 0;
-    transform: rotate(-17deg);
+    -webkit-transform: rotate(-17deg);
+       -moz-transform: rotate(-17deg);
+         -o-transform: rotate(-17deg);
+        -ms-transform: rotate(-17deg);
+            transform: rotate(-17deg);
     width: 7px;
 }
 
@@ -567,10 +581,14 @@
     background: none repeat scroll 0 0 #ffff00;
     content: "";
     height: 105%;
-    right: -12px;
+    right: -11px;
     position: absolute;
     top: 0;
-    transform: rotate(16deg);
+    -webkit-transform: rotate(16deg);
+       -moz-transform: rotate(16deg);
+         -o-transform: rotate(16deg);
+        -ms-transform: rotate(16deg);
+            transform: rotate(16deg);
     width: 19px;
 }
 
