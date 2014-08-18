@@ -1,7 +1,7 @@
 CSS3 Pikachu
 ===========
 
-Pikachu developed only using CSS3 | [Demo](https://developer.mozilla.org/pt-BR/demos/detail/pikachu-css3)
+Pikachu developed only using CSS3 | [Demo](http://raphaelfabeni.github.io/pikachu-css3)
 
 Now with easter egg. Type *Pikachu* (turn on the audio).
 
