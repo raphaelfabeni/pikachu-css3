@@ -62,8 +62,6 @@
 	background: none repeat scroll 0 0 #FFFF00;
     border: 5px solid #000000;
     overflow: hidden;
-    /* correction of overflow in webkit */
-    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
 }
 
 .ear-left {
@@ -73,8 +71,6 @@
     height: 110px;
 
     border-radius: 5px 125% 0px 125%;    
-    -webkit-box-shadow: 11px -9px 0 2px rgba(0, 0, 0, 0.2) inset;
-            box-shadow: 11px -9px 0 2px rgba(0, 0, 0, 0.2) inset;
 
     -webkit-transform: rotate(-26deg) skewX(25deg) skewY(0deg);
        -moz-transform: rotate(-26deg) skewX(25deg) skewY(0deg);
